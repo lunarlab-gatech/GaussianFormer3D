@@ -32,7 +32,8 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="./static/images/lab_icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -318,36 +319,6 @@
         <h2 class="title is-3">Quantitative Results</h2>
         <div class="content has-text-justified">
           <p>
-            3D semantic occupancy prediction performance on the on-road nuScenes-SurroundOcc validation set.
-          </p>
-          <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
-          <p>
-            3D semantic occupancy prediction performance on the on-road nuScenes-Occ3D validation set.
-          </p>
-          <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto; margin-bottom: 30px;">
-          
-          <p>
-            3D semantic occupancy prediction performance on the off-road RELLIS3D-WildOcc test set.
-          </p>
-          <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
-          <p>
-            Efficiency evaluation and comparison on the nuScenes-SurroundOcc validation set during inference.
-          </p>
-          <img src="./static/images/efficiency.png" alt="efficiency" style="width: auto; height: auto; margin-bottom: 30px;">
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- Results section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Quantitative Results</h2>
-        <div class="content has-text-justified">
-          <p>
             3D semantic occupancy prediction performance on the on-road <b>nuScenes-SurroundOcc</b> validation set.
           </p>
           <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
@@ -357,6 +328,45 @@
           </p>
           <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto; margin-bottom: 30px;">
           
+          <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+              <p>3D semantic occupancy prediction performance on the off-road <b>RELLIS3D-WildOcc</b> test set.</p>
+              <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 100%; height: auto;">
+            </div>
+
+            <div class="column is-half has-text-centered">
+              <p>Efficiency evaluation and comparison on the <b>nuScenes-SurroundOcc</b> validation set during inference.</p>
+              <img src="./static/images/efficiency.png" alt="efficiency" style="width: 100%; height: auto;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Results section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <div class="content has-text-justified">
+          <!-- First Text and Image Pair (SurroundOcc) -->
+          <div class="image-container" style="position: relative; display: inline-block; width: 100%; margin-bottom: 30px;">
+            <p class="centered-text">3D semantic occupancy prediction performance on the on-road <b>nuScenes-SurroundOcc</b> validation set.</p>
+            <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto;">
+          </div>
+
+          <!-- Second Text and Image Pair (Occ3D) -->
+          <div class="image-container" style="position: relative; display: inline-block; width: 100%; margin-bottom: 30px;">
+            <p class="centered-text">3D semantic occupancy prediction performance on the on-road <b>nuScenes-Occ3D</b> validation set.</p>
+            <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto;">
+          </div>
+
           <!-- Wrap last two pairs inside a flexbox grid -->
           <div class="columns is-centered">
             <!-- First Pair (WildOcc) -->
@@ -377,6 +387,8 @@
     </div>
   </div>
 </section>
+
+
 
 
 
