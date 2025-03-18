@@ -179,9 +179,9 @@
         <source src="./static/videos/old_video_demo.mp4"
                 type="video/mp4">
       </video> -->
-      <video id="teaser" autoplay muted loop playsinline style="width: 500px; height: auto; margin-bottom: 50px;">
-        <source src="./static/videos/new_combined_video_val_scene_2_fps_10_compressed.mp4"
-                type="video/mp4">
+      <video id="teaser" autoplay muted loop playsinline 
+       style="display: block; margin: 0 auto; width: 60%; max-width: 600px; height: auto; margin-bottom: 50px;">
+      <source src="./static/videos/new_combined_video_val_scene_2_fps_10_compressed.mp4" type="video/mp4">
       </video>
       <img src="./static/images/gaussianformer3d_teaser.jpg" alt="GaussianFormer3D" style="width: auto; height: auto;">
       <h2 class="subtitle has-text-centered">
@@ -311,6 +311,36 @@
 </section>
 
 <!-- Results section -->
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            3D semantic occupancy prediction performance on the on-road nuScenes-SurroundOcc validation set.
+          </p>
+          <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
+          <p>
+            3D semantic occupancy prediction performance on the on-road nuScenes-Occ3D validation set.
+          </p>
+          <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto; margin-bottom: 30px;">
+          
+          <p>
+            3D semantic occupancy prediction performance on the off-road RELLIS3D-WildOcc test set.
+          </p>
+          <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
+          <p>
+            Efficiency evaluation and comparison on the nuScenes-SurroundOcc validation set during inference.
+          </p>
+          <img src="./static/images/efficiency.png" alt="efficiency" style="width: auto; height: auto; margin-bottom: 30px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Results section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -320,25 +350,34 @@
           <p>
             3D semantic occupancy prediction performance on the on-road nuScenes-SurroundOcc validation set.
           </p>
-          <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto;">
+          <img src="./static/images/surroundocc.png" alt="nuScenes-SurroundOcc" style="width: 100%; height: auto; margin-bottom: 30px;">
+          
           <p>
             3D semantic occupancy prediction performance on the on-road nuScenes-Occ3D validation set.
           </p>
-          <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto;">
-          <p>
-            3D semantic occupancy prediction performance on the off-road RELLIS3D-WildOcc test set.
-          </p>
-          <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 100%; height: auto;">
-          <p>
-            Efficiency evaluation and comparison on the nuScenes-SurroundOcc validation set during inference.
-          </p>
-          <img src="./static/images/efficiency.png" alt="efficiency" style="width: auto; height: auto;">
+          <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto; margin-bottom: 30px;">
+          
+          <!-- Wrap last two pairs inside a flexbox grid -->
+          <div class="columns is-centered">
+            <!-- First Pair (WildOcc) -->
+            <div class="column is-half has-text-centered">
+              <p>3D semantic occupancy prediction performance on the off-road RELLIS3D-WildOcc test set.</p>
+              <img src="./static/images/wildocc.png" alt="RELLIS3D-WildOcc" style="width: 100%; height: auto;">
+            </div>
+
+            <!-- Second Pair (Efficiency) -->
+            <div class="column is-half has-text-centered">
+              <p>Efficiency evaluation and comparison on the nuScenes-SurroundOcc validation set during inference.</p>
+              <img src="./static/images/efficiency.png" alt="efficiency" style="width: 100%; height: auto;">
+            </div>
           </div>
+
+        </div>
       </div>
     </div>
-    <!-- <img src="./static/images/gaussianformer3d_method.jpg" alt="GaussianFormer3D Method" style="width: 100%; height: auto;"> -->
   </div>
 </section>
+
 
 
 <!-- Results section -->
