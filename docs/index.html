@@ -128,20 +128,20 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2505.10685" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Paper (Coming Soon)</span>
+                    <span>Paper</span>
                 </a>
             </span>
             <!-- Arxiv Link. -->
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2505.10685" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv (Coming Soon)</span>
+                    <span>arXiv</span>
                 </a>
             </span>
               <!-- Code Link. -->
@@ -361,10 +361,10 @@
           </div>
 
           <!-- Second Text and Image Pair (Occ3D) -->
-          <div class="image-container" style="position: relative; display: inline-block; width: 100%; margin-bottom: 30px;">
+          <!-- <div class="image-container" style="position: relative; display: inline-block; width: 100%; margin-bottom: 30px;">
             <p class="centered-text">3D semantic occupancy prediction performance on the on-road <b>nuScenes-Occ3D</b> validation set.</p>
             <img src="./static/images/occ3d.png" alt="nuScenes-Occ3D" style="width: 100%; height: auto;">
-          </div>
+          </div> -->
 
           <!-- Wrap last two pairs inside a flexbox grid -->
           <div class="columns is-centered">
@@ -377,7 +377,7 @@
             <!-- Second Pair (Efficiency) -->
             <div class="column is-half has-text-centered">
               <p>Efficiency evaluation and comparison on the <b>nuScenes-SurroundOcc</b> validation set during inference.</p>
-              <img src="./static/images/efficiency.png" alt="efficiency" style="width: 100%; height: auto;">
+              <img src="./static/images/efficiency_new.png" alt="efficiency" style="width: 100%; height: auto;">
             </div>
           </div>
 
@@ -399,11 +399,15 @@
         <h2 class="title is-3">Qualitative Results</h2>
         <div class="content has-text-justified">
           <p>
-            Visualization on the on-road <b>nuScenes-Occ3D</b> validation set.
+            Visualization on the on-road <b>nuScenes</b> validation set.
           </p>
           <img src="./static/images/occ3d_vis.jpg" alt="nuScenes-Occ3D-vis" style="width: 100%; height: auto; margin-bottom: 30px;">
           <p>
-            Visualization on the off-road <b>RELLIS3D-WildOcc</b> dataset.
+            Visualization comparison with GaussianFormer.
+          </p>
+          <img src="./static/images/gaussian_comparison_wo_bbox.jpg" alt="nuScenes-gaussian-comparison" style="width: 100%; height: auto; margin-bottom: 30px;">
+          <p>
+            Visualization on the off-road <b>RELLIS3D</b> dataset.
           </p>
           <img src="./static/images/wildocc_vis.jpg" alt="RELLIS3D-WildOcc-vis" style="width: 100%; height: auto; margin-bottom: 30px;">
           </div>
