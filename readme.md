@@ -31,14 +31,14 @@ Follow [installation instructions](docs/installation.md) to set up the environme
 ### NuScenes Dataset Preparation
 1. Download [nuScenes V1.0 full dataset](https://www.nuscenes.org/download).
 
-2. Download [depth_gt](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCBLi4qkz3BTYkYpCkhCDdlAa89obWuT-B9_9spSIpHyKc?e=cHql34), and unzip it.
+2. Download [depth_gt](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCBLi4qkz3BTYkYpCkhCDdlAa89obWuT-B9_9spSIpHyKc?e=AcQ40b), and unzip it.
 
-3. Download our provided [training pkl file](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDzp89mUsswRo-F5LHpsDd9Acyr_rkXiDQFqsqKtVM3QKc?e=Bw1Fd5) and [validation pkl file](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDMK0Iz4Z9HQKYcMsdkCivfAYp2MlcEtBTXFA921dANiJU?e=HoIgGq).
+3. Download our provided [training pkl file](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDzp89mUsswRo-F5LHpsDd9Acyr_rkXiDQFqsqKtVM3QKc?e=HJzivy) and [validation pkl file](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDMK0Iz4Z9HQKYcMsdkCivfAYp2MlcEtBTXFA921dANiJU?e=aK9qey).
 
 4. Download the occupancy annotations from [SurroundOcc](https://github.com/weiyithu/SurroundOcc) and unzip it.
 
 ### RELLIS3D Dataset Preparation
-1. Download our prepared processed [Rellis3D-WildOcc dataset](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDaUUBtXEInTaCS-zUgENA8AdbdhF6RUTK-YSmthiSg84U?e=fn7qh9), and unzip it.
+1. Download our prepared processed [Rellis3D-WildOcc dataset](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQDaUUBtXEInTaCS-zUgENA8AdbdhF6RUTK-YSmthiSg84U?e=nANsll), and unzip it.
 
 
 
@@ -68,7 +68,7 @@ GaussianFormer3D
 ```
 
 ### Evaluation
-We provided pre-trained weights of our model on [nuScenes-SurroundOcc](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCoIH-VSc5tRrAxVbg8Pm4PARtX4wL0DGgD5qIbWYHFFRI?e=4v7fId) and on [Rellis3D-WildOcc](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQBiEZEI5j-dT42SlZ1dFTmdATaqH-srLAQmUD3uiYFv23Y?e=4Nd84c).
+We provided pre-trained weights of our model on [nuScenes-SurroundOcc](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCoIH-VSc5tRrAxVbg8Pm4PARtX4wL0DGgD5qIbWYHFFRI?e=EBkysb) and on [Rellis3D-WildOcc](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQBiEZEI5j-dT42SlZ1dFTmdATaqH-srLAQmUD3uiYFv23Y?e=H308LU).
 
 ```bash
 # Evaluation on nuScenes-SurroundOcc validation set
@@ -99,8 +99,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_wildocc.py --py-config config/
 
 | Benchmark | Modality | Config | IoU | mIoU | Weight |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| nuScenes-SurroundOcc | L+C | nuscenes_surroundocc_gs25600.py | 43.3 | 27.1 | [weight](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCoIH-VSc5tRrAxVbg8Pm4PARtX4wL0DGgD5qIbWYHFFRI?e=4v7fId) |
-| Rellis3d-WildOcc | L+C | rellis3d_wildocc_gs25600.py | 33.9 | 13.1 | [weight](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQBiEZEI5j-dT42SlZ1dFTmdATaqH-srLAQmUD3uiYFv23Y?e=4Nd84c) |
+| nuScenes-SurroundOcc | L+C | nuscenes_surroundocc_gs25600.py | 43.3 | 27.1 | [weight](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQCoIH-VSc5tRrAxVbg8Pm4PARtX4wL0DGgD5qIbWYHFFRI?e=EBkysb) |
+| Rellis3d-WildOcc | L+C | rellis3d_wildocc_gs25600.py | 33.9 | 13.1 | [weight](https://gtvault-my.sharepoint.com/:u:/g/personal/lgan31_gatech_edu/IQBiEZEI5j-dT42SlZ1dFTmdATaqH-srLAQmUD3uiYFv23Y?e=H308LU) |
 
 
 ## Related Projects
